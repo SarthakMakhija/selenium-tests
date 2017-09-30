@@ -1,5 +1,5 @@
 # selenium-tests
-Sample project to learn project object model with Selenium tests running against [Sample Website](https://www.ultimateqa.com/filling-out-forms/)
+Sample project to learn page object model with Selenium tests running against [Sample Website](https://www.ultimateqa.com/filling-out-forms/)
 
 ## Page Object Model
 Page Object model is an object design pattern in Selenium, where web pages are represented as classes, and various 
