@@ -33,7 +33,7 @@ public class FormEntryTest {
     }
 
     @Test
-    public void shouldReturnSuccessPageGivenEmptyName(){
+    public void shouldReturnErrorPageGivenEmptyName(){
         FormEntryPage formEntryPage         = new FormEntryPage(webDriver);
         ErrorPage errorPage                 = formEntryPage.fillInFormWithEmptyName("functional-test-description");
         List<String> expectedErrorMessages  = Arrays.asList(new String[]{"Name"});
@@ -43,7 +43,7 @@ public class FormEntryTest {
     }
 
     @Test
-    public void shouldReturnSuccessPageGivenEmptyMessage(){
+    public void shouldReturnErrorPageGivenEmptyMessage(){
         FormEntryPage formEntryPage         = new FormEntryPage(webDriver);
         ErrorPage errorPage                 = formEntryPage.fillInFormWithEmptyMessage("functional-test");
         List<String> expectedErrorMessages  = Arrays.asList(new String[]{"Message"});
@@ -53,7 +53,7 @@ public class FormEntryTest {
     }
 
     @Test
-    public void shouldReturnSuccessPageGivenEmptyNameAndMessage(){
+    public void shouldReturnErrorPageGivenEmptyNameAndMessage(){
         FormEntryPage formEntryPage         = new FormEntryPage(webDriver);
         ErrorPage errorPage                 = formEntryPage.fillInFormWithEmptyNameAndMessage();
         List<String> expectedErrorMessages  = Arrays.asList(new String[]{"Name", "Message"});
